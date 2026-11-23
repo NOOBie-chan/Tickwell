@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
   publish = "www"
+  secrets_scan_omit = ["SERVER_URL]
 
 [build.environment]
   NODE_VERSION = "22"
