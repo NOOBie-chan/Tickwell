@@ -15,8 +15,6 @@ One Node service does everything: it serves the app and runs the collaboration A
 ## Native app (Capacitor) or a separate static host
 The installed app lives on its own origin, so bake in the server address once at build time:
 
-    SERVER_URL=https://your-app.onrender.com npm run build
-
 Copy the generated `www/` into your Capacitor project. Do not commit secrets: the server address is public.
 
 ## Notes
