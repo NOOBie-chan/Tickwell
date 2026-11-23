@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: tickwell
+    runtime: node
+    plan: free            # free: data is lost on restart. Use "starter" and the disk below to keep data.
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: DATA
+        value: /var/data/tickwell-data.json
+    # disk:                # needs a paid plan
+    #   name: tickwell-data
+    #   mountPath: /var/data
+    #   sizeGB: 1

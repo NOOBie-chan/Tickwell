@@ -1,0 +1,10 @@
+{
+  "name": "tickwell-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prep": "node prep.js",
+    "sync": "node prep.js && cap sync android",
+    "assets": "capacitor-assets generate --android"
+  }
+}
