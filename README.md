@@ -8,7 +8,6 @@ One Node service does everything: it serves the app and runs the collaboration A
 3. Environment variables:
    - `DATA` = `/var/data/tickwell-data.json`, plus a persistent disk mounted at `/var/data` (Render paid plans).
      Without a disk, Render wipes the file on every deploy or restart, and groups and shared tasks are lost.
-   - `SERVER_URL` is optional. Set it only if the app is opened from a different domain than the server.
    - `PORT` is set by Render.
 4. Open your Render URL. Collaboration works with no setup.
 
