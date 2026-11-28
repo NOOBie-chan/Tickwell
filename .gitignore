@@ -1,2 +1,5 @@
 /desktop
 /mobile
+.env
+Guide.md
+node_modules
